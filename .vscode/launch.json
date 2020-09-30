@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      
+        {
+            "name": "Android Development",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "presentation": {
+              "group": "Android",
+              "order": 1
+            }
+        },
+        {
+            "name": "iOS Development",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "presentation": {
+              "group": "iOS",
+              "order": 1
+            }
+        },   
+        {
+          "name": "Chrome Development",
+          "request": "launch",
+          "type": "dart",
+          "args": ["-d", "chrome","--web-port", "8000"],
+      },
+      {
+        "name": "All Tests",
+        "type": "dart",
+        "request": "launch",
+        "program": "test/", 
+      }
+    ]
+}
