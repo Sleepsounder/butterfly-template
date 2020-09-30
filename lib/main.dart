@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
 import 'package:flutter/services.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -10,7 +10,7 @@ import 'services/AuthenticationToken.dart';
 
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();  
+  WidgetsFlutterBinding.ensureInitialized();
   AuthenticationToken token;
 
   Environment.set(Environment(
@@ -33,9 +33,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Butterfly App',
-      theme: ThemeData(       
+      theme: ThemeData(
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,        
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       navigatorKey: locator<NavigationService>().navigatorKey,
       onGenerateRoute: Router().onGenerateRoute,
