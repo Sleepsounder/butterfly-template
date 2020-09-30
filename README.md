@@ -38,7 +38,7 @@ If it turns out that you do have all of the dependencies installed and you are s
    1. [MacOS Flutter install instructions](https://flutter.dev/docs/get-started/install/macos)
    1. [Windows Flutter install instructions](https://flutter.dev/docs/get-started/install/windows)
 1. Install [VSCode Flutter and Dart plugins](https://flutter.dev/docs/get-started/editor?tab=vscode)
-1. Install [build runner] (https://dart.dev/tools/build_runner)
+1. Install [build runner](https://dart.dev/tools/build_runner)
 1. Run `flutter doctor` from the terminal
    1. Review output
    1. Resolve any issues
